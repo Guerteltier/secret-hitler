@@ -1,3 +1,9 @@
+Dies ist der Secret Hitler Fork vom Asozialen Netzwerk.  
+Änderungen werden durch einen Cronjob alle 10 Minuten automatisch übernommen.
+
+**BITTE OHNE VORHERIGE ABSPRACHE NUR UI-ÄNDERUNGEN AUF MASTER!!!**  
+Thanks for your cooperation.
+
 # secret-hitler
 
 [![Build Status](https://api.travis-ci.com/cozuya/secret-hitler.svg?branch=master)](https://travis-ci.com/cozuya/secret-hitler/)
