@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 		return {
 			series: [fWins, lWins],
-			labels: [`${fWins.toFixed()}% Fascist wins`, `${lWins.toFixed()}% Liberal wins`]
+			labels: [`${fWins.toFixed()}% Fascist wins`, `${lWins.toFixed()}% Communist wins`]
 		};
 	};
 

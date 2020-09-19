@@ -624,13 +624,13 @@ class Gamechat extends React.Component {
 
 		const parseClaim = claim => {
 			const mode = (userInfo && userInfo.gameSettings && userInfo.gameSettings.claimCharacters) || 'legacy';
-			let liberalChar = 'L';
+			let liberalChar = 'C';
 			let fascistChar = 'F';
 			if (mode === 'legacy') {
 				liberalChar = 'B';
 				fascistChar = 'R';
 			} else if (mode === 'full') {
-				liberalChar = 'liberal';
+				liberalChar = 'communist';
 				fascistChar = 'fascist';
 			}
 			const claims = Array.from(claim);
@@ -1307,7 +1307,7 @@ class Gamechat extends React.Component {
 												}}
 												className="ui button twofascistoneliberal"
 											>
-												2 Fascist and a Liberal policy
+												2 Fascist and a Communist policy
 											</button>
 											<button
 												onClick={e => {
@@ -1315,7 +1315,7 @@ class Gamechat extends React.Component {
 												}}
 												className="ui button twoliberalonefascist"
 											>
-												2 Liberal and a Fascist policy
+												2 Communist and a Fascist policy
 											</button>
 											<button
 												onClick={e => {
@@ -1323,7 +1323,7 @@ class Gamechat extends React.Component {
 												}}
 												className="ui button threeliberal"
 											>
-												3 Liberal policies
+												3 Communist policies
 											</button>
 										</div>
 									);
@@ -1345,7 +1345,7 @@ class Gamechat extends React.Component {
 												}}
 												className="ui button onefascistoneliberal"
 											>
-												A Fascist and a Liberal policy
+												A Fascist and a Communist policy
 											</button>
 											<button
 												onClick={e => {
@@ -1353,7 +1353,7 @@ class Gamechat extends React.Component {
 												}}
 												className="ui button threeliberal"
 											>
-												2 Liberal policies
+												2 Communist policies
 											</button>
 										</div>
 									);
@@ -1375,7 +1375,7 @@ class Gamechat extends React.Component {
 												}}
 												className="ui button threeliberal"
 											>
-												Liberal team
+												Communist team
 											</button>
 										</div>
 									);
