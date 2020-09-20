@@ -163,9 +163,9 @@ module.exports.getBadWord = text => {
 };
 
 module.exports.DEFAULTTHEMECOLORS = {
-	primaryColor: 'hsl(225, 73%, 57%)',
-	secondaryColor: 'hsl(225, 48%, 57%)',
-	tertiaryColor: 'hsl(265, 73%, 57%)',
+	primaryColor: 'hsl(0, 0%, 0%)',
+	secondaryColor: 'hsl(0, 48%, 57%)',
+	tertiaryColor: 'hsl(120, 73%, 57%)',
 	baseBackgroundColor: 'hsl(0, 0%, 0%)',
 	baseTextColor: 'hsl(0, 0%, 100%)'
 };
