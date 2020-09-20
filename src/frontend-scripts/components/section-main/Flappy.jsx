@@ -93,7 +93,7 @@ const Flappy = ({ isFacist, userInfo, gameInfo, socket }) => {
 		}, 500);
 
 		socket.on('flappyUpdate', data => {
-			if (data.type === 'flap' && ((isFacist && data.team == 'fascist') || (!isFacist && data.team === 'liberal'))) {
+			if (data.type === 'flap' && ((isFacist && data.team === 'fascist') || (!isFacist && data.team === 'liberal'))) {
 				lastFlapTime = Date.now();
 			}
 

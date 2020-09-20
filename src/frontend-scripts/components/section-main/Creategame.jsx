@@ -1515,7 +1515,7 @@ export default class Creategame extends React.Component {
 				<div className="eight wide column ui grid" style={{ marginTop: '-1rem', marginLeft: '3rem', marginBottom: '3rem' }}>
 					<div className="row">
 						<div className="eight wide column">
-							<h4 className="ui header">Liberal policies</h4>
+							<h4 className="ui header">Communist policies</h4>
 							<Range
 								min={5}
 								max={8}
@@ -1626,7 +1626,7 @@ export default class Creategame extends React.Component {
 		}
 		if (this.state.customGameSettings.enabled) {
 			if (this.state.customGameSettings.fascistCount + 1 >= this.state.customGameSliderValue / 2) {
-				errs.push('There must be a liberal majority when the game starts.');
+				errs.push('There must be a communist majority when the game starts.');
 			}
 			if (this.state.customGameSettings.vetoZone <= this.state.customGameSettings.trackState.fas) {
 				errs.push('Veto Zone cannot be active when the game starts.');
