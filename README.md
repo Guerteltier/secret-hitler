@@ -1,7 +1,9 @@
 Dies ist der Secret Hitler Fork vom Asozialen Netzwerk.  
-Änderungen werden durch einen Cronjob alle 10 Minuten automatisch übernommen.
+Änderungen werden durch einen Webhook automatisch übernommen.  
+Änderungen außerhalb der UI erfordern ein Review vom Gürteltier.
 
-**BITTE OHNE VORHERIGE ABSPRACHE NUR UI-ÄNDERUNGEN AUF MASTER!!!**  
+**BITTE NUR PUSHEN, WENN KEIN SPIEL LÄUFT!!!**  
+**Der automatische Server-Neustart unterbricht alle laufenden Spiele!**  
 Thanks for your cooperation.
 
 # secret-hitler
