@@ -379,7 +379,7 @@ const DisplayLobbies = props => {
 			);
 		} else if (game.gameStatus === 'liberal') {
 			classes += ' liberal';
-			progressText = 'Liberals Win !';
+			progressText = 'Communists Win !';
 			progressIcons = (
 				<div className="victory-icon">
 					<img src="../images/bird.png" />
