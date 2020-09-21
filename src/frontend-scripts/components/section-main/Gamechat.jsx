@@ -630,10 +630,7 @@ class Gamechat extends React.Component {
 			const mode = (userInfo && userInfo.gameSettings && userInfo.gameSettings.claimCharacters) || 'legacy';
 			let liberalChar = 'C';
 			let fascistChar = 'F';
-			if (mode === 'legacy') {
-				liberalChar = 'B';
-				fascistChar = 'R';
-			} else if (mode === 'full') {
+			if (mode === 'full') {
 				liberalChar = 'communist';
 				fascistChar = 'fascist';
 			}
