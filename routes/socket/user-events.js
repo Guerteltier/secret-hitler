@@ -744,7 +744,7 @@ module.exports.handleAddNewGame = (socket, passport, data) => {
 					text: 'There will be '
 				},
 				{
-					text: `${newGame.customGameSettings.deckState.lib - newGame.customGameSettings.trackState.lib} liberal`,
+					text: `${newGame.customGameSettings.deckState.lib - newGame.customGameSettings.trackState.lib} communist`,
 					type: 'liberal'
 				},
 				{
@@ -769,7 +769,7 @@ module.exports.handleAddNewGame = (socket, passport, data) => {
 					text: 'The game will start with '
 				},
 				{
-					text: `${newGame.customGameSettings.trackState.lib} liberal`,
+					text: `${newGame.customGameSettings.trackState.lib} communist`,
 					type: 'liberal'
 				},
 				{
@@ -1209,7 +1209,7 @@ module.exports.handleAddNewClaim = (socket, passport, game, data) => {
 					case 'liberal':
 						text.push(
 							{
-								text: 'liberal ',
+								text: 'communist ',
 								type: 'liberal'
 							},
 							{
@@ -1339,7 +1339,7 @@ module.exports.handleUpdatedRemakeGame = (passport, game, data, socket) => {
 						text: 'There will be '
 					},
 					{
-						text: `${newGame.customGameSettings.deckState.lib - newGame.customGameSettings.trackState.lib} liberal`,
+						text: `${newGame.customGameSettings.deckState.lib - newGame.customGameSettings.trackState.lib} communist`,
 						type: 'liberal'
 					},
 					{
@@ -1364,7 +1364,7 @@ module.exports.handleUpdatedRemakeGame = (passport, game, data, socket) => {
 						text: 'The game will start with '
 					},
 					{
-						text: `${newGame.customGameSettings.trackState.lib} liberal`,
+						text: `${newGame.customGameSettings.trackState.lib} communist`,
 						type: 'liberal'
 					},
 					{
@@ -1706,7 +1706,7 @@ module.exports.handleAddNewGameChat = (socket, passport, data, game, modUserName
 		}
 
 		if (/^(b|blue|l|lib|liberal)$/i.exec(chat)) {
-			// console.log(chat, ' - ', 'liberal', ' - ', game.private.seatedPlayers[playerIndex].playersState[playerIndex].claim);
+			// console.log(chat, ' - ', 'communist', ' - ', game.private.seatedPlayers[playerIndex].playersState[playerIndex].claim);
 			if (
 				0 <= playerIndex <= 9 &&
 				(game.private.seatedPlayers[playerIndex].playersState[playerIndex].claim === 'didSinglePolicyPeek' ||
