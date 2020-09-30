@@ -12,10 +12,10 @@ Thanks for your cooperation.
 [![Dev Dependencies](https://david-dm.org/cozuya/secret-hitler/dev-status.svg)](https://david-dm.org/cozuya/secret-hitler?type=dev)
 [![Styled with Prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-Secret Hitler is a dramatic game of political intrigue and betrayal set in 1930's Germany. Players are secretly divided into two teams - liberals and fascists.
-Known only to each other, the fascists coordinate to sow distrust and install their cold-blooded leader. The liberals must find and stop the Secret Hitler before it’s too late.
+Secret Hitler is a dramatic game of political intrigue and betrayal set in 1930's Germany. Players are secretly divided into two teams - communists and fascists.
+Known only to each other, the fascists coordinate to sow distrust and install their cold-blooded leader. The communists must find and stop the Secret Hitler before it’s too late.
 
-Effectively this is a take on the classic social deduction/hidden role board game genre such as Werewolf and Mafia, but closer to the Resistance. Games are 5-10 players, the minority (fascists) know who everyone is and the majority (liberals) don't know anything. Over the course of the game the liberals need to try to identify the fascists to win and the fascists need to remain hidden, with an extra "superfascist" role with an additional win condition for both sides.
+Effectively this is a take on the classic social deduction/hidden role board game genre such as Werewolf and Mafia, but closer to the Resistance. Games are 5-10 players, the minority (fascists) know who everyone is and the majority (communists) don't know anything. Over the course of the game the communists need to try to identify the fascists to win and the fascists need to remain hidden, with an extra "superfascist" role with an additional win condition for both sides.
 
 This codebase is a "lobby style" implementation of this game - anyone can make a game which is displayed on a list on the "home" page. The game starts when enough players are seated. In addition, anyone can watch a game in progress, etc.
 
@@ -104,4 +104,4 @@ Adapted the rules explanation to account for online vs physical play.
 
 There is an option when players make a game to "rebalance" the 6, 7 and 9 player games - 6p starts with a fascist policy already enacted, 7p starts with one less fascist policy in the deck, 9p starts with two less fascist policies in the deck. Players (and results from analyzing statistics) have noted that these game modes are not balanced well in the original ruleset.
 
-There is a custom game mode where game creators can make games with different rulesets such as being able to pick policy powers, pick number of fascists (always less than liberals), number of policies, etc.
+There is a custom game mode where game creators can make games with different rulesets such as being able to pick policy powers, pick number of fascists (always less than communists), number of policies, etc.

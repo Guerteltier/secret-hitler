@@ -91,7 +91,7 @@ class ReplayGamechat extends React.Component {
 			liberalChar = 'B';
 			fascistChar = 'R';
 		} else if (mode === 'full') {
-			liberalChar = 'liberal';
+			liberalChar = 'communist';
 			fascistChar = 'fascist';
 		}
 		const claims = Array.from(claim);

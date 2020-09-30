@@ -186,7 +186,7 @@ class Settings extends React.Component {
 								fontSize: this.state.fontSize
 							}}
 						>
-							The quick brown fascist jumped over the lazy liberal. (comfortaa, default)
+							The quick brown fascist jumped over the lazy communist. (comfortaa, default)
 						</label>
 					</div>
 				</div>
@@ -206,7 +206,7 @@ class Settings extends React.Component {
 								fontSize: this.state.fontSize
 							}}
 						>
-							The quick brown fascist jumped over the lazy liberal. (lato)
+							The quick brown fascist jumped over the lazy communist. (lato)
 						</label>
 					</div>
 				</div>
@@ -226,7 +226,7 @@ class Settings extends React.Component {
 								fontSize: this.state.fontSize
 							}}
 						>
-							The quick brown fascist jumped over the lazy liberal. (germania one)
+							The quick brown fascist jumped over the lazy communist. (germania one)
 						</label>
 					</div>
 				</div>
@@ -246,7 +246,7 @@ class Settings extends React.Component {
 								fontSize: this.state.fontSize
 							}}
 						>
-							The quick brown fascist jumped over the lazy liberal. (roboto slab)
+							The quick brown fascist jumped over the lazy communist. (roboto slab)
 						</label>
 					</div>
 				</div>
@@ -665,7 +665,7 @@ class Settings extends React.Component {
 							<h4 className="ui header">Policy claim representation</h4>
 							<select onChange={this.handleClaimCharactersChange} value={this.state.claimCharacters}>
 								<option value="short">Short (L/F)</option>
-								<option value="full">Full (liberal/fascist)</option>
+								<option value="full">Full (communist/fascist)</option>
 								<option value="legacy">Legacy (B/R)</option>
 							</select>
 							{window.staffRole && window.staffRole !== 'altmod' && window.staffRole !== 'trialmod' && window.staffRole !== 'veteran' && (
