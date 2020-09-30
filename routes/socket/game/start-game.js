@@ -55,7 +55,7 @@ const beginGame = game => {
 				// With custom games, up to 8 libs can be in a game, but there are only 6 cards. Two are re-used in this case.
 				_.range(0, 8)
 					.map(el => ({
-						cardName: 'communist',
+						cardName: 'liberal',
 						icon: el % 6,
 						team: 'liberal'
 					}))
@@ -103,7 +103,7 @@ const beginGame = game => {
 						text: 'The game begins and you receive the '
 					},
 					{
-						text: player.role.cardName === 'hitler' ? 'hitler' : player.role.cardName,
+						text: player.role.cardName === 'hitler' ? 'hitler' : player.role.cardName === 'liberal' ? 'communist' : player.role.cardName,
 						type: player.role.cardName
 					},
 					{
