@@ -53,7 +53,7 @@ function buildEnhancedGameSummary(_summary) {
 	// List[{ id: Int, username: String, role: String, loyalty: String }]
 	const players = (() => {
 		const roleToLoyalty = Map({
-			liberal: 'liberal',
+			liberal: 'communist',
 			fascist: 'fascist',
 			hitler: 'fascist'
 		});
