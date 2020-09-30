@@ -1560,7 +1560,7 @@ module.exports.handleUpdatedRemakeGame = (passport, game, data, socket) => {
 								text: 'The remaining policies are '
 							},
 							{
-								policies: game.private.policies.map(policyName => (policyName === 'liberal' ? 'b' : 'r'))
+								policies: game.private.policies.map(policyName => (policyName === 'liberal' ? 'c' : 'f'))
 							},
 							{
 								text: '.'
