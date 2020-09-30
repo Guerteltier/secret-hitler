@@ -55,7 +55,7 @@ const shufflePolicies = (module.exports.shufflePolicies = (game, isStart) => {
 					text: 'Deck shuffled: '
 				},
 				{
-					text: `${libCount} liberal`,
+					text: `${libCount} communist`,
 					type: 'liberal'
 				},
 				{
