@@ -55,7 +55,7 @@ class Changelog extends React.Component {
 				<p>
 					<strong style={{ fontSize: '1.1em', color: 'darkmagenta' }}>Deck/Claim Information Customizations</strong> - you can now choose how deck and claim
 					information is presented in your chat. The original way ('RRB' etc) is still the default, and available. However, you can now pick short ('FFL' etc)
-					or full ('fascist, fascist, liberal' etc) as well.
+					or full ('fascist, fascist, communist' etc) as well.
 				</p>
 				<img
 					src="../images/1.7.0-images/1-7ClaimTypeLegacy.png"
