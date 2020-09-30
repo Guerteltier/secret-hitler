@@ -160,7 +160,7 @@ const enactPolicy = (game, team, socket) => {
 				chat: [
 					{ text: 'A ' },
 					{
-						text: team === 'liberal' ? 'liberal' : 'fascist',
+						text: team === 'liberal' ? 'communist' : 'fascist',
 						type: team === 'liberal' ? 'liberal' : 'fascist'
 					},
 					{
