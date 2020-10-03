@@ -118,7 +118,7 @@ module.exports.completeGame = (game, winningTeamName) => {
 		timestamp: new Date(),
 		chat: [
 			{
-				text: winningTeamName === 'fascist' ? 'Fascists' : 'Liberals',
+				text: winningTeamName === 'fascist' ? 'Fascists' : 'Communists',
 				type: winningTeamName === 'fascist' ? 'fascist' : 'liberal'
 			},
 			{ text: ' win the game.' }
@@ -132,7 +132,7 @@ module.exports.completeGame = (game, winningTeamName) => {
 				text: 'The remaining policies are '
 			},
 			{
-				policies: game.private.policies.map(policyName => (policyName === 'liberal' ? 'b' : 'r'))
+				policies: game.private.policies.map(policyName => (policyName === 'liberal' ? 'C' : 'F'))
 			},
 			{
 				text: '.'
@@ -155,7 +155,7 @@ module.exports.completeGame = (game, winningTeamName) => {
 		}, 15000);
 	}
 
-	game.general.status = winningTeamName === 'fascist' ? 'Fascists win the game.' : 'Liberals win the game.';
+	game.general.status = winningTeamName === 'fascist' ? 'Fascists win the game.' : 'Communists win the game.';
 	game.gameState.isCompleted = winningTeamName;
 	sendGameList();
 

@@ -146,15 +146,15 @@ module.exports.selectPolicies = (passport, game, socket) => {
 							text: ' peeks and sees '
 						},
 						{
-							text: game.private.policies[0] === 'liberal' ? 'B' : 'R',
+							text: game.private.policies[0] === 'liberal' ? 'C' : 'F',
 							type: game.private.policies[0]
 						},
 						{
-							text: game.private.policies[1] === 'liberal' ? 'B' : 'R',
+							text: game.private.policies[1] === 'liberal' ? 'C' : 'F',
 							type: game.private.policies[1]
 						},
 						{
-							text: game.private.policies[2] === 'liberal' ? 'B' : 'R',
+							text: game.private.policies[2] === 'liberal' ? 'C' : 'F',
 							type: game.private.policies[2]
 						},
 						{
@@ -172,17 +172,17 @@ module.exports.selectPolicies = (passport, game, socket) => {
 						chat: [
 							{ text: 'You peek at the top 3 policies and see that they are a ' },
 							{
-								text: game.private.policies[0],
+								text: game.private.policies[0] === 'liberal' ? 'communist' : game.private.policies[0],
 								type: game.private.policies[0]
 							},
 							{ text: ', a ' },
 							{
-								text: game.private.policies[1],
+								text: game.private.policies[1] === 'liberal' ? 'communist' : game.private.policies[1],
 								type: game.private.policies[1]
 							},
 							{ text: ', and a ' },
 							{
-								text: game.private.policies[2],
+								text: game.private.policies[2] === 'liberal' ? 'communist' : game.private.policies[2],
 								type: game.private.policies[2]
 							},
 							{ text: ' policy.' }
@@ -331,7 +331,7 @@ module.exports.selectOnePolicy = (passport, game) => {
 							text: ' peeks and sees '
 						},
 						{
-							text: game.private.policies[0] === 'liberal' ? 'B' : 'R',
+							text: game.private.policies[0] === 'liberal' ? 'C' : 'F',
 							type: game.private.policies[0]
 						},
 						{
@@ -349,7 +349,7 @@ module.exports.selectOnePolicy = (passport, game) => {
 						chat: [
 							{ text: 'You peek at the top policy and see that it is a ' },
 							{
-								text: policy,
+								text: policy === 'liberal' ? 'communist' : policy,
 								type: policy
 							},
 							{ text: ' policy.' }
@@ -477,7 +477,7 @@ module.exports.selectBurnCard = (passport, game, data, socket) => {
 	}
 
 	if (game.gameState.phase !== 'presidentVoteOnBurn') {
-		return;	
+		return;
 	}
 
 	if (!game.private.lock.selectBurnCard && !(game.general.isTourny && game.general.tournyInfo.isCancelled)) {
@@ -665,7 +665,7 @@ module.exports.selectPartyMembershipInvestigate = (passport, game, data, socket)
 	}
 
 	if (game.gameState.phase !== 'selectPartyMembershipInvestigate') {
-		return;	
+		return;
 	}
 
 	if (!game.private.lock.selectPartyMembershipInvestigate && !(game.general.isTourny && game.general.tournyInfo.isCancelled)) {
@@ -740,7 +740,7 @@ module.exports.selectPartyMembershipInvestigate = (passport, game, data, socket)
 								},
 								{ text: ' and determine that they are on the ' },
 								{
-									text: playersTeam,
+									text: playersTeam === 'liberal' ? 'communist' : playersTeam,
 									type: playersTeam
 								},
 								{ text: ' team.' }
@@ -763,7 +763,7 @@ module.exports.selectPartyMembershipInvestigate = (passport, game, data, socket)
 								text: ' sees a '
 							},
 							{
-								text: playersTeam,
+								text: playersTeam === 'liberal' ? 'communist' : playersTeam,
 								type: playersTeam
 							},
 							{
@@ -876,7 +876,7 @@ module.exports.selectPartyMembershipInvestigateReverse = (passport, game, data, 
 	}
 
 	if (game.gameState.phase !== 'selectPartyMembershipInvestigateReverse') {
-		return;	
+		return;
 	}
 
 	if (!game.private.lock.selectPartyMembershipInvestigateReverse && !(game.general.isTourny && game.general.tournyInfo.isCancelled)) {
@@ -965,7 +965,7 @@ module.exports.selectPartyMembershipInvestigateReverse = (passport, game, data, 
 								},
 								{ text: ' has shown you their party membership, and you determine that they are on the ' },
 								{
-									text: playersTeam,
+									text: playersTeam === 'liberal' ? 'communist' : playersTeam,
 									type: playersTeam
 								},
 								{ text: ' team.' }
@@ -988,7 +988,7 @@ module.exports.selectPartyMembershipInvestigateReverse = (passport, game, data, 
 								text: ' shows their '
 							},
 							{
-								text: playersTeam,
+								text: playersTeam === 'liberal' ? 'communist' : playersTeam,
 								type: playersTeam
 							},
 							{
@@ -1103,7 +1103,7 @@ module.exports.selectSpecialElection = (passport, game, data, socket) => {
 	}
 
 	if (game.gameState.phase !== 'specialElection') {
-		return;	
+		return;
 	}
 
 	if (game.general.timedMode && game.private.timerId) {
@@ -1263,7 +1263,7 @@ module.exports.selectPlayerToExecute = (passport, game, data, socket) => {
 	}
 
 	if (game.gameState.phase !== 'execution') {
-		return;	
+		return;
 	}
 
 	const nonPresidentChat = {
@@ -1390,7 +1390,7 @@ module.exports.selectPlayerToExecute = (passport, game, data, socket) => {
 				} else {
 					let libAlive = false;
 					seatedPlayers.forEach(p => {
-						if (p.role.cardName == 'liberal' && !p.isDead) libAlive = true;
+						if (p.role.cardName === 'liberal' && !p.isDead) libAlive = true;
 					});
 					if (!libAlive) {
 						const chat = {
@@ -1399,7 +1399,7 @@ module.exports.selectPlayerToExecute = (passport, game, data, socket) => {
 							chat: [
 								{ text: 'All ' },
 								{
-									text: 'liberals',
+									text: 'communists',
 									type: 'liberal'
 								},
 								{ text: '  have been executed.' }
@@ -1457,7 +1457,7 @@ module.exports.selectPlayerToExecute = (passport, game, data, socket) => {
 										text: ' and one '
 									},
 									{
-										text: 'liberal',
+										text: 'communist',
 										type: 'liberal'
 									},
 									{
@@ -1492,7 +1492,7 @@ module.exports.selectPlayerToExecute = (passport, game, data, socket) => {
 									chat: [
 										{ text: 'A ' },
 										{
-											text: policy === 'liberal' ? 'liberal' : 'fascist',
+											text: policy === 'liberal' ? 'communist' : 'fascist',
 											type: policy === 'liberal' ? 'liberal' : 'fascist'
 										},
 										{
