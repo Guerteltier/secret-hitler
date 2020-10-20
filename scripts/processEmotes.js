@@ -56,7 +56,7 @@ const result = new PNG({
 let numDone = 0;
 const incrementEmote = () => {
 	numDone++;
-	if (numDone == numEmotes) result.pack().pipe(fs.createWriteStream(`public/images/emotesheet.png`));
+	if (numDone === numEmotes) result.pack().pipe(fs.createWriteStream(`public/images/emotesheet.png`));
 };
 emotes.forEach(emote => {
 	const thisCell = curCell;
