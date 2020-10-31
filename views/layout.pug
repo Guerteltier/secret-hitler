@@ -290,15 +290,7 @@ html(lang="en")
       var privateWarning = document.querySelector("input[name=privateWarning]");
 
       privateWarning.addEventListener(  'change', function() {
-        if (this.checked) {
-          var confirmPrompt = prompt("Are you sure you want to only be able to play private games? If so type OK and click OK. If not click cancel.", "");
-        
-          if (confirmPrompt == "ok" || confirmPrompt == "OK" || confirmPrompt == "Ok" || confirmPrompt == "oK") {
-            document.getElementById("private-player").checked = true;
-          } else {
           document.getElementById("private-player").checked = false;
-          }
-        }
       });
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
     script(src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js")
