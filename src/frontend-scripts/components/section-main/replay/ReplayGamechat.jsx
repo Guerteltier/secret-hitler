@@ -85,13 +85,10 @@ class ReplayGamechat extends React.Component {
 		const { userInfo } = this.props;
 
 		const mode = (userInfo && userInfo.gameSettings && userInfo.gameSettings.claimCharacters) || 'legacy';
-		let liberalChar = 'L';
+		let liberalChar = 'C';
 		let fascistChar = 'F';
-		if (mode === 'legacy') {
-			liberalChar = 'B';
-			fascistChar = 'R';
-		} else if (mode === 'full') {
-			liberalChar = 'liberal';
+		if (mode === 'full') {
+			liberalChar = 'communist';
 			fascistChar = 'fascist';
 		}
 		const claims = Array.from(claim);
