@@ -47,7 +47,7 @@ class TopLevelErrorBoundry extends React.Component {
 				<h2>You've broken the website.</h2>
 				<p>
 					Not really, but there's been an unhandled error in the site's UI code. This is probably due to a new issue in a recent deployment. Please expand the
-					details below and post a screenshot of them in #development-contribution on our Discord.{'  '}
+					details below and post a screenshot of them in #secretpinguin on our Discord.{'  '}
 					<a href="/game">Click here to get back to safety.</a>
 				</p>
 				<details style={{ whiteSpace: 'pre-wrap' }}>
@@ -581,7 +581,7 @@ export class App extends React.Component {
 											<h2 style={{ fontFamily: '"Roboto", sans-serif', textAlign: 'center' }}>Moderator Warning</h2>
 											<div style={{ width: '450px', margin: '5px 0' }}>
 												The following is a warning from a moderator. If you believe this warning to be unjustified, you may argue your case respectfully by
-												pinging @Moderator in #mod-support on our <a href="https://discord.gg/secrethitlerio">Discord</a>.
+												pinging @Gürteltier in #secretpinguin on our <a href="https://asozialesnetzwerk.github.io/discord/">Discord</a>.
 												<br />
 												<br />
 												Please read and follow the rules as laid out in the <a href="/tou">Terms of Use</a> to avoid further action on your account.

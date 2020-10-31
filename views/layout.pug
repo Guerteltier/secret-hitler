@@ -4,7 +4,7 @@ html(lang="en")
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="theme-color", content="#c36563")
-    meta(name="description", content="A web adaptation of the social deduction board game Secret Hitler.  Always free and no ads.")
+    meta(name="description", content="A web adaptation of the social deduction board game Secret Pinguin.  Always free and no ads.")
     meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
     link(rel="stylesheet", type="text/css", href="/styles/Semantic-UI-CSS-master/semantic.min.css")
     
@@ -25,16 +25,16 @@ html(lang="en")
     link(rel="apple-touch-icon", sizes="180x180", href="/apple-touch-icon.png")
     link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#aaa")
     link(rel="manifest", href="/manifest.json")
-    meta(itemprop="name" content="Secret Hitler.io")
-    meta(itemprop="description" content="A web adaptation of the social deduction board game Secret Hitler.  Always free and no ads.")
-    meta(property="og:url" content="https://secrethitler.io")
+    meta(itemprop="name" content="Secret Pinguin.de")
+    meta(itemprop="description" content="A web adaptation of the social deduction board game Secret Pinguin.  Always free and no ads.")
+    meta(property="og:url" content="https://secretpinguin.de")
     meta(property="og:type" content="website")
-    meta(property="og:title" content="Secret Hitler.io")
-    meta(property="og:description" content="A web adaptation of the social deduction board game Secret Hitler.  Always free and no ads.")
+    meta(property="og:title" content="Secret Pinguin.de")
+    meta(property="og:description" content="A web adaptation of the social deduction board game Secret Pinguin.  Always free and no ads.")
     meta(name="twitter:card" content="summary_large_image")
-    meta(name="twitter:title" content="Secret Hitler.io")
-    meta(name="twitter:description" content="A web adaptation of the social deduction board game Secret Hitler.  Always free and no ads.")
-    title Secret Hitler.io
+    meta(name="twitter:title" content="Secret Pinguin.de")
+    meta(name="twitter:description" content="A web adaptation of the social deduction board game Secret Pinguin.  Always free and no ads.")
+    title Secret Pinguin.de
   body
     #main
       block content
@@ -75,12 +75,12 @@ html(lang="en")
       if discord
         a.active.item Discord
       else
-        a.item(href="https://discord.gg/secrethitlerio") Discord
+        a.item(href="https://asozialesnetzwerk.github.io/discord/") Discord
 
       if github
         a.active.item GitHub
       else
-        a.item(href="https://github.com/cozuya/secret-hitler") GitHub
+        a.item(href="https://github.com/asozialesnetzwerk/secret-hitler") GitHub
 
       if tou
         a.active.item Terms of Use
@@ -130,12 +130,12 @@ html(lang="en")
           if discord
             a.active.item Discord
           else
-            a.item(href="https://discord.gg/secrethitlerio") Discord
+            a.item(href="https://asozialesnetzwerk.github.io/discord/") Discord
 
           if github
             a.active.item GitHub
           else
-            a.item(href="https://github.com/cozuya/secret-hitler") GitHub
+            a.item(href="https://github.com/asozialesnetzwerk/secret-hitler") GitHub
 
           if tou
             a.active.item Terms of Use
@@ -284,26 +284,13 @@ html(lang="en")
         .ui.negative.hidden.message
 
     script.
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-105770066-1', 'auto');
       ga('send', 'pageview');			
 
       var privateWarning = document.querySelector("input[name=privateWarning]");
 
       privateWarning.addEventListener(  'change', function() {
-        if (this.checked) {
-          var confirmPrompt = prompt("Are you sure you want to only be able to play private games? If so type OK and click OK. If not click cancel.", "");
-        
-          if (confirmPrompt == "ok" || confirmPrompt == "OK" || confirmPrompt == "Ok" || confirmPrompt == "oK") {
-            document.getElementById("private-player").checked = true;
-          } else {
           document.getElementById("private-player").checked = false;
-          }
-        }
       });
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
     script(src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js")

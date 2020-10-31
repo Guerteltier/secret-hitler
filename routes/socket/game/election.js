@@ -1378,15 +1378,15 @@ module.exports.selectVoting = (passport, game, data, socket, force = false) => {
 					text: ' received '
 				},
 				{
-					text: game.private.currentElectionPolicies[0] === 'liberal' ? 'B' : 'R',
+					text: game.private.currentElectionPolicies[0] === 'liberal' ? 'C' : 'F',
 					type: game.private.currentElectionPolicies[0]
 				},
 				{
-					text: game.private.currentElectionPolicies[1] === 'liberal' ? 'B' : 'R',
+					text: game.private.currentElectionPolicies[1] === 'liberal' ? 'C' : 'F',
 					type: game.private.currentElectionPolicies[1]
 				},
 				{
-					text: game.private.currentElectionPolicies[2] === 'liberal' ? 'B' : 'R',
+					text: game.private.currentElectionPolicies[2] === 'liberal' ? 'C' : 'F',
 					type: game.private.currentElectionPolicies[2]
 				},
 				{
