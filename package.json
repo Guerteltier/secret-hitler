@@ -19,7 +19,7 @@
 	"dependencies": {
 		"compression": "^1.6.2",
 		"connect-mongodb-session": "^2.0.5",
-		"connect-redis": "^3.4.0",
+		"connect-redis": "^4.0.0",
 		"debug": "^3.1.0",
 		"dotenv": "^5.0.1",
 		"express": "^4.15.2",
@@ -58,7 +58,7 @@
 		"react-redux": "^5.0.6",
 		"react-select": "^3.0.0",
 		"react-switch": "^4.1.0",
-		"redis": "^2.8.0",
+		"redis": "^3.1.1",
 		"redux": "^3.7.2",
 		"redux-devtools": "^3.4.0",
 		"redux-saga": "^0.16.0",
@@ -74,8 +74,8 @@
 		"semantic-ui-visibility": "^2.2.9",
 		"serve-favicon": "^2.4.2",
 		"snyk": "^1.189.0",
-		"socket.io": "2.0.3",
-		"socket.io-client": "2.0.3",
+		"socket.io": "3.0.0",
+		"socket.io-client": "4.0.0",
 		"sweetalert2": "9.10.9",
 		"yamljs": "^0.3.0"
 	},
